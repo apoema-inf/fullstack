@@ -17,12 +17,11 @@ const appRoutes: Routes = [
   { path: 'processo-seletivo', component: ProcessoSeletivoComponent },
   {
     path: 'home',
-    component: HomeComponent,
-    data: { title: 'Heroes List' }
+    component: HomeComponent
   },
   {
     path: '',
-    redirectTo: '/heroes',
+    redirectTo: '/home',
     pathMatch: 'full'
   },
   //{ path: '**', component: PageNotFoundComponent }
