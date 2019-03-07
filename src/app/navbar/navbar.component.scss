@@ -1,0 +1,25 @@
+@import "../../assets/sass/variables";
+
+.uk-navbar-container {
+    margin-bottom: 0px;
+}
+
+.uk-logo {
+  max-width: 250px;
+}
+
+.uk-navbar-nav li {
+  a {
+    color: $verde-escuro;
+  }
+}
+
+.active {
+  background-color: $verde-claro;
+  color: whitesmoke !important;
+  transition: all 0.5s ease;
+  &:hover,
+  &:active {
+    color: white !important;
+  }
+}

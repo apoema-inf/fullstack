@@ -1,3 +1,49 @@
-<p>
-  sobre works!
-</p>
+<div class="uk-container">
+  <br />
+  <h3>Caracterização</h3>
+  <p id="sinopse" class="fonte18" style="text-align: justify;">
+    A Especialização em Desenvolvimento Web e Mobile - Full Stack é um curso de Especialização Lato Sensu com carga
+    horária de 390 horas, presencial, com 18 meses de duração e aberta para 30 vagas. As aulas começam dia 29 de Março
+    de 2019.
+  </p>
+
+  <h3>A quem é destinado este curso?</h3>
+  <p>
+    Este curso destina-se a pessoas que desejam ser referência no desenvolvimento de software de qualidade, seja no
+    papel de programador(a), arquiteto(a), líder técnico, dentre outras. Para isso, serão exercitados no curso tanto
+    questões conceituais quanto questões tecnológicas modernas no que tange a criação de aplicações para a web e
+    celulares Android e iOS. Adicionalmente, questões de processo e design de produto também são discutidas, pois
+    entendemos que não só de tecnologia vive o profissional de TI, mas também fatores humanos do processo devem estar
+    incluídos nesta formação.
+  </p>
+  <p>Exemplos de tecnologia exercitados são HTML, CSS, Javascript, Angular, NodeJS, Android (Java e Kotlin) e iOS
+    (Swift).</p>
+  <br />
+  <br />
+</div>
+<div style="background-color: #f2f2f2">
+  <div class="uk-container">
+    <h2 align="center" style="margin-top: 10px;">Disciplinas</h2>
+    <ng-container *ngFor="let disciplina of disciplinas">
+      <ul uk-accordion>
+
+        <li>
+          <a class="uk-accordion-title" href="#"><b>{{disciplina.nome}}</b></a>
+          <div class="uk-accordion-content">
+            <p><b>Carga horária: </b>{{disciplina.cargahoraria}}</p>
+            <p><b>Docente responsável:</b> {{disciplina.docente}}</p>
+
+            <p><b>Ementa:</b></p>
+            <p>{{disciplina.ementa}}</p>
+
+            <p><b>Metodologia:</b></p>
+            <p>{{disciplina.metodologia}}</p>
+            <p><b>Bibliografia básica:</b></p>
+            <p>{{disciplina.bibliografia}}</p>
+          </div>
+        </li>
+
+      </ul>
+    </ng-container>
+  </div>
+</div>

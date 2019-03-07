@@ -1,28 +1,20 @@
 <nav class="uk-navbar-container uk-margin" uk-navbar>
   <div class="uk-navbar-center">
 
-    <div class="uk-navbar-center-left">
+    <div class="uk-navbar-center-left uk-margin-large-right">
       <div>
         <ul class="uk-navbar-nav">
-          <li class="uk-active"><a href="#">Active</a></li>
-          <li>
-            <a href="#">Parent</a>
-            <div class="uk-navbar-dropdown">
-              <ul class="uk-nav uk-navbar-dropdown-nav">
-                <li class="uk-active"><a href="#">Active</a></li>
-                <li><a href="#">Item</a></li>
-                <li><a href="#">Item</a></li>
-              </ul>
-            </div>
-          </li>
+          <li><a routerLink="home" routerLinkActive="active">Início</a></li>
+          <li><a routerLink="sobre" routerLinkActive="active">Sobre</a></li>
         </ul>
       </div>
     </div>
-    <a class="uk-navbar-item uk-logo" href="#"><img src="assets/images/logo-fullstack.png"></a>
-    <div class="uk-navbar-center-right">
+    <a class="uk-navbar-item uk-logo" routerLink="home"><img src="assets/images/logo-fullstack.png"></a>
+    <div class="uk-navbar-center-right uk-margin-large-left">
       <div>
         <ul class="uk-navbar-nav">
-          <li><a href="#">Item</a></li>
+          <li><a routerLink="contato" routerLinkActive="active">Contato</a></li>
+          <li><a href="#">Inscreva-se</a></li>
         </ul>
       </div>
     </div>
