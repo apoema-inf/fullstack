@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+@import "assets/sass/variables";
+
+.page-footer {
+    padding-top: 20px;
+    background-color: #3E4551;
+    color: #fff;
+}
+
+.white-text {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+
+.footer-copyright {
+    overflow: hidden;
+    height: 50px;
+    line-height: 50px;
+    color: #d1cfd4;
+    background-color: #323741;
+    text-align: center; 
+}
