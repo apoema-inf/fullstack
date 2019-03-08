@@ -54,3 +54,27 @@
     }
   }
 }
+
+.bg-disciplinas {
+  background-color: whitesmoke;
+  h2 {
+    color: $verde-claro;
+    font-weight: bold;
+  }
+  p, a {
+    color: $cinza-escuro;
+  }
+  .uk-open a {
+    color: white;
+    background-color: $verde-claro;
+  }
+  .uk-accordion-content {
+    b {
+      color: $verde-escuro;
+    }
+    p {
+      color: $cinza-escuro;
+    }
+    
+  }
+}

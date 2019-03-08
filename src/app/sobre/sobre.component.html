@@ -19,13 +19,14 @@
     (Swift).</p>
   <br />
 </div>
-<div class="grey">
+
+<div class="uk-section bg-disciplinas">
   <div class="uk-container">
-    <h2 align="center" class="titulo-container">Disciplinas</h2>
+    <h2 align="center" class="titulo-container"><b>Disciplinas</b></h2>
     <ng-container *ngFor="let disciplina of disciplinas">
       <ul uk-accordion>
         <li>
-          <a class="uk-accordion-title" href="#"><b>{{disciplina.nome}}</b></a>
+          <a class="uk-padding-small uk-accordion-title" href="#">{{disciplina.nome}}</a>
           <div class="uk-accordion-content">
             <p><b>Carga horária: </b>{{disciplina.cargahoraria}}</p>
             <p><b>Docente responsável:</b> {{disciplina.docente}}</p>
@@ -46,63 +47,69 @@
   </div>
 </div>
 
-<div class="uk-container uk-container-xsmall">
-  <h2 align="center" class="titulo-container">Docentes</h2>
-  <table class="uk-table uk-table-divider uk-table-middle">
-    <thead>
-      <tr>
-        <th>Docente</th>
-        <th>Titulação</th>
-        <th>Curriculum Lattes</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Adriana Silveira de Souza</td>
-        <td>Me.</td>
-        <td><a href="http://lattes.cnpq.br/7718085116411118" target="_blank">http://lattes.cnpq.br/7718085116411118</a></td>
-      </tr>
-      <tr>
-        <td>Sérgio Teixeira de Carvalho</td>
-        <td>Dr.</td>
-        <td><a href="http://lattes.cnpq.br/2721053239592051" target="_blank">http://lattes.cnpq.br/2721053239592051</a></td>
-      </tr>
-      <tr>
-        <td>Edmundo Sérgio Spoto</td>
-        <td>Dr.</td>
-        <td><a href="http://lattes.cnpq.br/0656325794546880" target="_blank">http://lattes.cnpq.br/0656325794546880</a></td>
-      </tr>
-      <tr>
-        <td>Fábio Nogueira de Lucena</td>
-        <td>Dr.</td>
-        <td><a href="http://lattes.cnpq.br/6428011745982173" target="_blank">http://lattes.cnpq.br/6428011745982173</a></td>
-      </tr>
-      <tr>
-        <td>Vinícius Sebba Patto</td>
-        <td>Dr.</td>
-        <td><a href="http://lattes.cnpq.br/3585475958654532" target="_blank">http://lattes.cnpq.br/3585475958654532</a></td>
-      </tr>
-      <tr>
-        <td>Sandro Silva Moreira</td>
-        <td>Me.</td>
-        <td><a href="	
-          http://lattes.cnpq.br/3401439109520359" target="_blank">http://lattes.cnpq.br/3401439109520359</a></td>
-      </tr>
-      <tr>
-        <td>Iwens Gervásio Sene Júnior</td>
-        <td>Dr.</td>
-        <td><a href="http://lattes.cnpq.br/3693296350551971" target="_blank">http://lattes.cnpq.br/3693296350551971</a></td>
-      </tr>
-      <tr>
-        <td>Daniel Alves Ferreira Martins</td>
-        <td>Me.</td>
-        <td><a href="http://lattes.cnpq.br/2372621321725366" target="_blank">http://lattes.cnpq.br/2372621321725366</a></td>
-      </tr>
-      <tr>
-        <td>Silvano Maneck Malfatti</td>
-        <td>Me.</td>
-        <td><a href="http://lattes.cnpq.br/5988455539579567" target="_blank">http://lattes.cnpq.br/5988455539579567</a></td>
-      </tr>
-    </tbody>
-  </table>
+<div class="uk-section bg-docentes">
+  <div class="uk-container uk-container-xsmall">
+    <h2 align="center" class="titulo-container titulo"><b>Docentes</b></h2>
+    <table class="uk-table uk-table-divider uk-table-middle">
+      <thead>
+        <tr>
+          <th>Docente</th>
+          <th>Titulação</th>
+          <th>Curriculum Lattes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Adriana Silveira de Souza</td>
+          <td>Me.</td>
+          <td><a class="uk-button uk-button-primary uk-box-shadow-large" href="http://lattes.cnpq.br/7718085116411118"
+              target="_blank">Lattes</a></td>
+        </tr>
+        <tr>
+          <td>Sérgio Teixeira de Carvalho</td>
+          <td>Dr.</td>
+          <td><a class="uk-button uk-button-primary uk-box-shadow-large" href="http://lattes.cnpq.br/2721053239592051"
+              target="_blank">Lattes</a></td>
+        </tr>
+        <tr>
+          <td>Edmundo Sérgio Spoto</td>
+          <td>Dr.</td>
+          <td><a class="uk-button uk-button-primary uk-box-shadow-large" href="http://lattes.cnpq.br/0656325794546880"
+              target="_blank">Lattes</a></td>
+        </tr>
+        <tr>
+          <td>Fábio Nogueira de Lucena</td>
+          <td>Dr.</td>
+          <td><a class="uk-button uk-button-primary uk-box-shadow-large" href="http://lattes.cnpq.br/6428011745982173"
+              target="_blank">Lattes</a></td>
+        </tr>
+        <tr>
+          <td>Vinícius Sebba Patto</td>
+          <td>Dr.</td>
+          <td><a class="uk-button uk-button-primary uk-box-shadow-large" href="http://lattes.cnpq.br/3585475958654532"
+              target="_blank">Lattes</a></td>
+        </tr>
+        <tr>
+          <td>Sandro Silva Moreira</td>
+          <td>Me.</td>
+          <td><a class="uk-button uk-button-primary uk-box-shadow-large" href="http://lattes.cnpq.br/3401439109520359" target="_blank">Lattes</a></td>
+        </tr>
+        <tr>
+          <td>Iwens Gervásio Sene Júnior</td>
+          <td>Dr.</td>
+          <td><a class="uk-button uk-button-primary uk-box-shadow-large" href="http://lattes.cnpq.br/3693296350551971" target="_blank">Lattes</a></td>
+        </tr>
+        <tr>
+          <td>Daniel Alves Ferreira Martins</td>
+          <td>Me.</td>
+          <td><a class="uk-button uk-button-primary uk-box-shadow-large" href="http://lattes.cnpq.br/2372621321725366" target="_blank">Lattes</a></td>
+        </tr>
+        <tr>
+          <td>Silvano Maneck Malfatti</td>
+          <td>Me.</td>
+          <td><a class="uk-button uk-button-primary uk-box-shadow-large" href="http://lattes.cnpq.br/5988455539579567" target="_blank">Lattes</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
