@@ -1,8 +1,9 @@
 @import "assets/sass/variables";
+@import "assets/sass/mixins";
 
 .page-footer {
   padding-top: 20px;
-  background-color: $verde-escuro;
+  @include gradient-verde;
   color: #fff;
 }
 
@@ -22,7 +23,7 @@
 }
 
 .bg-cinza-escuro {
-  background-color: $cinza-escuro;
+  @include gradient-cinza;
   color: white;
   p, h3 {
     color: white;
@@ -33,7 +34,7 @@
 }
 
 .bg-anexos {
-  background-color: $verde-escuro;
+  @include gradient-verde;
   h3 {
     font-weight: bold;
   }
@@ -76,5 +77,15 @@
       color: $cinza-escuro;
     }
     
+  }
+}
+
+.bg-sobre {
+  h3 {
+    font-weight: bold;
+    color: $verde-escuro;
+  }
+  p {
+    color: $cinza-escuro;
   }
 }

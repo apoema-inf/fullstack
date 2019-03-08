@@ -1,0 +1,9 @@
+@import 'variables';
+
+@mixin gradient-verde {
+    background-image: linear-gradient($verde-escuro, $verde-claro);
+}
+
+@mixin gradient-cinza {
+    background-image: linear-gradient($cinza-escuro, #4e5565);
+}
