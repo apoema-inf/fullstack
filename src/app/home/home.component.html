@@ -1,41 +1,99 @@
-<div uk-slideshow="autoplay: true; animation: push; min-height: 300; max-height: 400">
-
-  <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
-
-    <ul class="uk-slideshow-items">
-      <li>
-        <img src="https://getuikit.com/docs/images/photo.jpg" alt="" uk-cover>
-        <div class="uk-position-center uk-position-small uk-text-center uk-light">
-          <h2 class="uk-margin-remove">Center</h2>
-          <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <button class="uk-button uk-button-primary uk-margin-top">Primary</button>
+<!-- Navbar -->
+<div class="uk-section bg-navbar uk-box-shadow-large">
+    <div class="uk-container">
+        <div class="uk-child-width-1-2@m uk-child-width-1-1@s" uk-grid>
+            <div class="uk-flex uk-flex-center uk-flex-middle ">
+                <a href="http://www.inf.ufg.br" target="_blank">
+                    <img src="assets/images/logo-inf.png" style="max-width:12rem">
+                </a>
+            </div>
+            <div class="uk-flex uk-flex-center uk-flex-middle ">
+                <a href="http://apoema.inf.ufg.br" target="_blank">
+                    <img src="assets/images/logoapoema.png" style="max-width:10rem">
+                </a>
+            </div>
         </div>
-      </li>
-      <li>
-        <img src="https://getuikit.com/docs/images/dark.jpg" alt="" uk-cover>
-        <div class="uk-position-center uk-position-small uk-text-center uk-light">
-          <h2 class="uk-margin-remove">Center</h2>
-          <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <button class="uk-button uk-button-primary uk-margin-top">Primary</button>
+    </div>
+</div>
+
+<!-- Home -->
+<div class="uk-section">
+    <div class="uk-container">
+        <h3 class="title-esp">Especializações</h3>
+        <div class="uk-flex uk-flex-around uk-flex-middle uk-child-width-1-4@m uk-child-width-1-1@m" uk-grid>
+            <div class="uk-card uk-card-default espbi uk-box-shadow-large">
+                <div class="uk-card-media-top">
+                </div>
+                <div class="uk-card-body">
+                    <h3 class="uk-card-title">ESPBI</h3>
+                    <p>Design de Sistemas e Soluções de Business Intelligence</p>
+                    <a class="uk-button uk-button-default" target="_blank"
+                        href="http://www.inf.ufg.br/espbi/">Acessar</a>
+                </div>
+            </div>
+            <div class="uk-card uk-card-default espgti uk-box-shadow-large">
+                <div class="uk-card-media-top">
+                </div>
+                <div class="uk-card-body">
+                    <h3 class="uk-card-title">ESPGTI</h3>
+                    <p>Governança e Gestão de Sistemas e Tecnologias da Informação</p>
+                    <a class="uk-button uk-button-default" target="_blank"
+                        href="http://www.inf.ufg.br/espgti/">Acessar</a>
+                </div>
+            </div>
+            <div class="uk-card uk-card-default fullstack uk-box-shadow-large">
+                <div class="uk-card-media-top">
+                </div>
+                <div class="uk-card-body">
+                    <h3 class="uk-card-title">Full Stack</h3>
+                    <p>Desenvolvimento Web e Mobile - Full Stack</p>
+                    <a class="uk-button uk-button-default"  routerLink="/fullstack" target="_blank" href="">Acessar</a>
+                </div>
+            </div>
         </div>
-      </li>
-      <li>
-        <img src="https://getuikit.com/docs/images/light.jpg" alt="" uk-cover>
-        <div class="uk-position-center uk-position-small uk-text-center uk-light">
-          <h2 class="uk-margin-remove">Center</h2>
-          <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <button class="uk-button uk-button-primary uk-margin-top">Primary</button>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-footer">
+    <div class="uk-container">
+        <div class="uk-child-width-1-2@m uk-child-width-1-1@s uk-flex uk-flex-middle uk-text-center">
+            <div class="uk-child-width-1-1 uk-flex uk-flex-middle uk-flex-center" uk-grid>
+                <div>
+                    <p>Alameda Palmeiras, s/n - Câmpus Samambaia, Goiânia - GO, 74690-900</p>
+                </div>
+
+            </div>
+            <div class="uk-child-width-1-2@m" uk-grid>
+                <div class="uk-flex uk-flex-right">
+                    <div>
+                        <h5>Especializações</h5>
+                        <ul class="uk-list">
+                            <li><a href="http://www.inf.ufg.br/espgti/" target="_blank">ESPGTI</a></li>
+                            <li><a href="http://www.inf.ufg.br/espbi/" target="_blank">ESPBI</a></li>
+                            <li><a routerLink="/fullstack" target="_blank">Full Stack</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="uk-flex uk-flex-right">
+                    <div>
+                        <h5>Contato</h5>
+                        <ul class="uk-list">
+                            <li>(62) 3521-1181</li>
+                            <li>(62) 3521-1724</li>
+                            <li>(62) 3521-1505</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-      </li>
-    </ul>
 
-    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
-      uk-slideshow-item="previous"></a>
-    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
-      uk-slideshow-item="next"></a>
-
-  </div>
-
-  <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
-
+    </div>
+</footer>
+<div class="footer-copyright">
+    <div class="container-fluid">
+        © 2019 Copyright: <a class="uk-link-text" style="color: white !important;"
+            href="http://apoema.inf.ufg.br/" target="_blank">APOEMA-INF</a>
+    </div>
 </div>

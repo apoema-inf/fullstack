@@ -7,3 +7,7 @@
 @mixin gradient-cinza {
     background-image: linear-gradient($cinza-escuro, #4e5565);
 }
+
+@mixin gradient($c1, $c2) {
+    background-image: linear-gradient($c1, $c2);
+}

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ContatoComponent } from './contato.component';
+import { FullstackComponent } from './fullstack.component';
 
-describe('ContatoComponent', () => {
-  let component: ContatoComponent;
-  let fixture: ComponentFixture<ContatoComponent>;
+describe('FullstackComponent', () => {
+  let component: FullstackComponent;
+  let fixture: ComponentFixture<FullstackComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ContatoComponent ]
+      declarations: [ FullstackComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ContatoComponent);
+    fixture = TestBed.createComponent(FullstackComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

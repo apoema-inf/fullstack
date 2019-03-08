@@ -1,47 +1,42 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import {LocationStrategy, HashLocationStrategy} from '@angular/common';
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
-import { SobreComponent } from './sobre/sobre.component';
-import { ProcessoSeletivoComponent } from './processo-seletivo/processo-seletivo.component';
-import { ContatoComponent } from './contato/contato.component';
+import { Routes, RouterModule } from '@angular/router';
+import { FullstackComponent } from './fullstack/fullstack.component';
+import { FullstackModule } from './fullstack/fullstack.module';
+import { SobreComponent } from './fullstack/sobre/sobre.component';
+import { ProcessoSeletivoComponent } from './fullstack/processo-seletivo/processo-seletivo.component';
+import { FullstackHomeComponent } from './fullstack/home/home.component';
 
 const appRoutes: Routes = [
-  { path: 'sobre', component: SobreComponent },
-  { path: 'contato', component: ContatoComponent },
-  { path: 'processo-seletivo', component: ProcessoSeletivoComponent },
+  { path: 'home', component: HomeComponent },
   {
-    path: 'home',
-    component: HomeComponent
+    path: 'fullstack',
+    component: FullstackComponent,
+    children: [
+      { path: 'sobre', component: SobreComponent },
+      { path: 'home', component: FullstackHomeComponent },
+      { path: '', redirectTo: 'home', pathMatch: 'full' },
+      { path: 'processo-seletivo', component: ProcessoSeletivoComponent }
+    ]
   },
-  {
-    path: '',
-    redirectTo: '/home',
-    pathMatch: 'full'
-  },
-  //{ path: '**', component: PageNotFoundComponent }
+  { path: '', redirectTo: 'home', pathMatch: 'full' }
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
-    FooterComponent,
-    HomeComponent,
-    SobreComponent,
-    ProcessoSeletivoComponent,
-    ContatoComponent
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    FullstackModule
   ],
-  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
+  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
