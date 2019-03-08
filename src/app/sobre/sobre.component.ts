@@ -20,9 +20,9 @@ export class SobreComponent implements OnInit {
             'fixação do conhecimento. O conhecimento deve ser aplicado em disciplinas de cunho prático e no projeto final de' +
             'curso. Um estudo de caso deverá ser definido no início do curso para se desenvolver trabalhos das demais' +
             'disciplinas.',
-        bibliografia: 'Rafael Priklandniki, Renato Willi, Fabiano Milani. Métodos ágeis para desenvolvimento de Software. Ed' +
-            'Bokman, 2014. Project Management Institute, A Guide to the Project Management Body of Knowledge, Fifth Edition, 2015.' +
-            'IEEE Computer Society, Guide to the Software Engineering Body of Knowledge, Version 3.0, 2014.'
+        bibliografia: '<p>Rafael Priklandniki, Renato Willi, Fabiano Milani. Métodos ágeis para desenvolvimento de Software. Ed</p>' +
+            '<p>Bokman, 2014. Project Management Institute, A Guide to the Project Management Body of Knowledge, Fifth Edition, 2015.</p>' +
+            '<p>IEEE Computer Society, Guide to the Software Engineering Body of Knowledge, Version 3.0, 2014.</p>'
     },
     {
         nome: 'Fundamentos de Orientação a Objetos com Java',
@@ -37,13 +37,13 @@ export class SobreComponent implements OnInit {
             'realização de exercícios e atividades práticas em laboratório para aprendizagem e fixação dos conhecimentos sobre Orientação a ' +
             'Objetos com linguagem de programação Java. O conhecimento deve ser aplicado para modelar elementos e fundamentar o desenvolvimento' +
             'de projeto de software ou de sistemas de informação pelo paradigma de orientação a objetos.',
-        bibliografia: 'Grady Booch, James Rumbaugh & James Rumbaugh. The Unified Modeling Language User Guide, 2nd Edition, 2005.' +
-            'Oracle, Java Tutorials, 2016. Disponível em <http://docs.oracle.com/javase/tutorial/>' +
-            'Oracle, Java Platform Standard Edition 7 Documentation, 2016. Disponível em <http://docs.oracle.com/javase/7/docs/index.html>' +
-            'Oracle, Java Platform, Enterprise Edition (Java EE) 7 Documentation, 2016. Disponível em <http://docs.oracle.com/javaee/7/index.html>' +
-            'Pragmatic Unit Testing in Java with Junit Andrew Hunt & David Thomas, Pragmatic Bookshelf, 2003' +
-            'Pragmatic Version Control Using Subversion Mike Mason Pragmatic Bookshelf, 2005' +
-            'Git Reference Documentation, 2016. Disponível em <https://git-scm.com/documentation>'
+        bibliografia: '<p>Grady Booch, James Rumbaugh & James Rumbaugh. The Unified Modeling Language User Guide, 2nd Edition, 2005.</p>' +
+            '<p>Oracle, Java Tutorials, 2016. Disponível em <http://docs.oracle.com/javase/tutorial/></p>' +
+            '<p>Oracle, Java Platform Standard Edition 7 Documentation, 2016. Disponível em <http://docs.oracle.com/javase/7/docs/index.html></p>' +
+            '<p>Oracle, Java Platform, Enterprise Edition (Java EE) 7 Documentation, 2016. Disponível em <http://docs.oracle.com/javaee/7/index.html></p>' +
+            '<p>Pragmatic Unit Testing in Java with Junit Andrew Hunt & David Thomas, Pragmatic Bookshelf, 2003</p>' +
+            '<p>Pragmatic Version Control Using Subversion Mike Mason Pragmatic Bookshelf, 2005</p>' +
+            '<p>Git Reference Documentation, 2016. Disponível em <https://git-scm.com/documentation></p>'
     },
     {
         nome: 'Experiência de Usuário: Fundamentos de IHC, Design e Usabilidade',
@@ -103,12 +103,12 @@ export class SobreComponent implements OnInit {
             ' sobre programação back-end. O conhecimento deve ser aplicado para modelar e implementar elementos que executam e são' +
             ' persistidos em servidores de aplicações ou sistemas de informação. O estudo de caso definido no início do curso deverá ' +
             'ser utilizado para desenvolver os trabalhos da disciplina.',
-        bibliografia: '<p>Node JS API Docummentation, 2017. Disponível em <https://nodejs.org/api/index.html></p>' +
-        '<p>Node JS Application Developer\'s Guide, 2017. Disponível em <https://docs.marklogic.com/guide/node-dev></p>' +
-        '<p>Angular JS Tutorials, 2017. Disponível em <https://docs.angularjs.org/tutorial></p>' +
-        '<p>Leonard Richardson, Sam Ruby.  RESTful Web Services - Web services for the real world. O\'Reilly Media, 2007</p>' +
-        '<p>Glenn Hostetler, Sandor Hasznos. Web Service and SOA Technologies. Practicing Safe Techs; First Ed., 2009.</p>' +
-        '<p>MongoDB Database References, 2016. Disponível em <https://docs.mongodb.com/manual/reference/database-references/></p>'
+        bibliografia: `<p>Node JS API Docummentation, 2017. Disponível em <https://nodejs.org/api/index.html></p>
+        <p>Node JS Application Developer\'s Guide, 2017. Disponível em <https://docs.marklogic.com/guide/node-dev></p>
+        <p>Angular JS Tutorials, 2017. Disponível em <https://docs.angularjs.org/tutorial></p>
+        <p>Leonard Richardson, Sam Ruby.  RESTful Web Services - Web services for the real world. O\'Reilly Media, 2007</p>
+        <p>Glenn Hostetler, Sandor Hasznos. Web Service and SOA Technologies. Practicing Safe Techs; First Ed., 2009.</p>
+        <p>MongoDB Database References, 2016. Disponível em <https://docs.mongodb.com/manual/reference/database-references/></p>`
     },
     {
         nome: 'Fundamentos de Computação Móvel e Ubíqua',
@@ -169,6 +169,20 @@ export class SobreComponent implements OnInit {
         + '<p>W3School. AngulaJS Tutorial. Disponível em <http://www.w3schools.com/angular/default.asp></p>'
     },
     {
+        nome: 'Fundamentos de Programação Mobile com Android',
+        cargahoraria: '30 horas',
+        docente: 'Sandro Silva Moreira',
+        ementa: `Introdução ao sistema Android: arquitetura do sistema e SDK. Desenvolvimento de interfaces gráficas: Activity, Fragment 
+            e bibliotecas. Criação de listas. Arquiteturas para a aplicação. Conexão à internet através de protocolo HTTP. Publicação de 
+            aplicativos no loja Google Play.`,
+        metodologia: `Aulas expositivas serão utilizadas para demonstrar o conhecimento que cobre a ementa seguida de prática em laboratório 
+            onde cada estudante irá exercitar e adquirir habilidade de desenvolvimento de aplicativos por meio da construção de programas 
+            em Android. Esta prática deverá exercitar todas as ferramentas básicas e boas práticas definidas na ementa.`,
+        bibliografia: `<p>Nelson Glauber. Dominando o Android - 2ª edição: Do básico ao avançado. NOVATEC, 2015.</p>
+            <p>Ricardo R. Lecheta. Google Android. NOVATEC, 2015.</p>
+            <p>João Bosco Monteiro. Google Android: crie aplicações para celulares e tablets. Casa do Código, 2015.</p>`
+    },
+    {
         nome: 'Programação Mobile com Android Avançado',
         cargahoraria: '30 horas',
         docente: 'Sandro Silva Moreira',
@@ -177,9 +191,9 @@ export class SobreComponent implements OnInit {
         metodologia: 'Aulas expositivas serão utilizadas para demonstrar o conhecimento que cobre a ementa seguida de prática em laboratório ' +
             'onde cada estudante irá exercitar e adquirir habilidade de desenvolvimento de aplicativos por meio da construção de programas em ' +
             ' Android. Esta prática deverá exercitar todas as ferramentas básicas e boas práticas definidas na ementa.',
-        bibliografia: 'Nelson Glauber. Dominando o Android - 2ª edição: Do básico ao avançado. NOVATEC, 2015.' +
-            'Ricardo R. Lecheta. Google Android. NOVATEC, 2015.' +
-            'João Bosco Monteiro. Google Android: crie aplicações para celulares e tablets. Casa do Código, 2015.'
+        bibliografia: '<p>Nelson Glauber. Dominando o Android - 2ª edição: Do básico ao avançado. NOVATEC, 2015.</p>' +
+            '<p>Ricardo R. Lecheta. Google Android. NOVATEC, 2015.</p>' +
+            '<p>João Bosco Monteiro. Google Android: crie aplicações para celulares e tablets. Casa do Código, 2015.</p>'
     },
     {
         nome: 'Programação Mobile com iOS',
@@ -190,18 +204,9 @@ export class SobreComponent implements OnInit {
         metodologia: 'Aulas expositivas serão utilizadas para demonstrar o conhecimento que cobre a ementa seguida de prática em laboratório ' +
             'onde cada estudante irá exercitar e adquirir habilidade de desenvolvimento de aplicativos por meio da construção de programas em iOS.' +
             ' Esta prática deverá exercitar todas as ferramentas básicas e boas práticas definidas na ementa.',
-        bibliografia: 'Chris Eidhof Florian Kugler, Wouter Swierstra, Swift Programming: The Big Nerd Ranch Guide (Big Nerd Ranch Guides), Big nerd Ranch, 2016'
-            + 'Chris Eidhof Florian Kugler, Wouter Swierstra, Functional Swift, Big nerd Ranch, 2015'
-    },
-    {
-        nome: '',
-        cargahoraria: '',
-        docente: '',
-        ementa: '',
-        metodologia: '',
-        bibliografia: ''
+        bibliografia: '<p>Chris Eidhof Florian Kugler, Wouter Swierstra, Swift Programming: The Big Nerd Ranch Guide (Big Nerd Ranch Guides), Big nerd Ranch, 2016</p>'
+            + '<p>Chris Eidhof Florian Kugler, Wouter Swierstra, Functional Swift, Big nerd Ranch, 2015</p>'
     }
-
 ]
 
   ngOnInit() {

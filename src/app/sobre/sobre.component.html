@@ -1,6 +1,5 @@
-<div class="uk-container">
-  <br />
-  <h3>Caracterização</h3>
+<div class="uk-container" style="padding: auto;">
+  <h3 class="titulo-container">Caracterização</h3>
   <p id="sinopse" class="fonte18" style="text-align: justify;">
     A Especialização em Desenvolvimento Web e Mobile - Full Stack é um curso de Especialização Lato Sensu com carga
     horária de 390 horas, presencial, com 18 meses de duração e aberta para 30 vagas. As aulas começam dia 29 de Março
@@ -19,14 +18,12 @@
   <p>Exemplos de tecnologia exercitados são HTML, CSS, Javascript, Angular, NodeJS, Android (Java e Kotlin) e iOS
     (Swift).</p>
   <br />
-  <br />
 </div>
-<div style="background-color: #f2f2f2">
+<div class="grey">
   <div class="uk-container">
-    <h2 align="center" style="margin-top: 10px;">Disciplinas</h2>
+    <h2 align="center" class="titulo-container">Disciplinas</h2>
     <ng-container *ngFor="let disciplina of disciplinas">
       <ul uk-accordion>
-
         <li>
           <a class="uk-accordion-title" href="#"><b>{{disciplina.nome}}</b></a>
           <div class="uk-accordion-content">
@@ -39,11 +36,73 @@
             <p><b>Metodologia:</b></p>
             <p>{{disciplina.metodologia}}</p>
             <p><b>Bibliografia básica:</b></p>
-            <p>{{disciplina.bibliografia}}</p>
+            <p [innerHTML]="disciplina.bibliografia"></p>
           </div>
         </li>
 
       </ul>
     </ng-container>
+    <br />
   </div>
+</div>
+
+<div class="uk-container uk-container-xsmall">
+  <h2 align="center" class="titulo-container">Docentes</h2>
+  <table class="uk-table uk-table-divider uk-table-middle">
+    <thead>
+      <tr>
+        <th>Docente</th>
+        <th>Titulação</th>
+        <th>Curriculum Lattes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Adriana Silveira de Souza</td>
+        <td>Me.</td>
+        <td><a href="http://lattes.cnpq.br/7718085116411118" target="_blank">http://lattes.cnpq.br/7718085116411118</a></td>
+      </tr>
+      <tr>
+        <td>Sérgio Teixeira de Carvalho</td>
+        <td>Dr.</td>
+        <td><a href="http://lattes.cnpq.br/2721053239592051" target="_blank">http://lattes.cnpq.br/2721053239592051</a></td>
+      </tr>
+      <tr>
+        <td>Edmundo Sérgio Spoto</td>
+        <td>Dr.</td>
+        <td><a href="http://lattes.cnpq.br/0656325794546880" target="_blank">http://lattes.cnpq.br/0656325794546880</a></td>
+      </tr>
+      <tr>
+        <td>Fábio Nogueira de Lucena</td>
+        <td>Dr.</td>
+        <td><a href="http://lattes.cnpq.br/6428011745982173" target="_blank">http://lattes.cnpq.br/6428011745982173</a></td>
+      </tr>
+      <tr>
+        <td>Vinícius Sebba Patto</td>
+        <td>Dr.</td>
+        <td><a href="http://lattes.cnpq.br/3585475958654532" target="_blank">http://lattes.cnpq.br/3585475958654532</a></td>
+      </tr>
+      <tr>
+        <td>Sandro Silva Moreira</td>
+        <td>Me.</td>
+        <td><a href="	
+          http://lattes.cnpq.br/3401439109520359" target="_blank">http://lattes.cnpq.br/3401439109520359</a></td>
+      </tr>
+      <tr>
+        <td>Iwens Gervásio Sene Júnior</td>
+        <td>Dr.</td>
+        <td><a href="http://lattes.cnpq.br/3693296350551971" target="_blank">http://lattes.cnpq.br/3693296350551971</a></td>
+      </tr>
+      <tr>
+        <td>Daniel Alves Ferreira Martins</td>
+        <td>Me.</td>
+        <td><a href="http://lattes.cnpq.br/2372621321725366" target="_blank">http://lattes.cnpq.br/2372621321725366</a></td>
+      </tr>
+      <tr>
+        <td>Silvano Maneck Malfatti</td>
+        <td>Me.</td>
+        <td><a href="http://lattes.cnpq.br/5988455539579567" target="_blank">http://lattes.cnpq.br/5988455539579567</a></td>
+      </tr>
+    </tbody>
+  </table>
 </div>
