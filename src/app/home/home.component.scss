@@ -67,3 +67,21 @@
   padding: 0;
   min-height: 250px;
 }
+
+.uk-badge{
+  margin-top: 5px; 
+  margin-left: 5px; 
+  &.orange {
+    background: orangered !important;
+  }
+  &.green {
+    background: forestgreen !important;
+  }
+}
+
+.prof {
+  @include gradient(#474a51, #7b7b7b);
+  a {
+    color: #1b6799;
+  }
+}
